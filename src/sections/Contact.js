@@ -8,7 +8,6 @@ import riya from '../assets/Images/riya.jpeg';
 import vedika from '../assets/Images/vedika.jpeg';
 import vania from '../assets/Images/vania.jpeg';
 import somya from '../assets/Images/Somya.jpeg';
-import archita from '../assets/Images/archita.jpg';
 
 const GlobalStyle = createGlobalStyle`
   @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap');
@@ -31,7 +30,7 @@ const Title = styled.h1`
   transform: translateX(-50%); 
 
   @media (max-width: 1200px) {
-    font-size: 4rem;
+    font-size: 5rem;
   }
 
   @media (max-width: 992px) {
@@ -207,16 +206,6 @@ const members = [
     },
   },
   {
-    name: 'Vania Singh',
-    position: 'Secretary',
-    image: vania,
-    phone: '+91 8949799760',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/vania-singh/',
-      gmail: 'mailto:vaniasingh2004@gmail.com',
-    },
-  },
-  {
     name: 'Somya Jain',
     position: 'Webmaster',
     image: somya,
@@ -224,6 +213,16 @@ const members = [
     social: {
       linkedin: 'https://www.linkedin.com/in/somya-jain-088792249/',
       gmail: 'mailto:jainsomya482@gmail.com',
+    },
+  },
+  {
+    name: 'Vania Singh',
+    position: 'Secretary',
+    image: vania,
+    phone: '+91 8949799760',
+    social: {
+      linkedin: 'https://www.linkedin.com/in/vania-singh/',
+      gmail: 'mailto:vaniasingh2004@gmail.com',
     },
   },
 ];

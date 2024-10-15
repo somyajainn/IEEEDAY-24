@@ -1,7 +1,6 @@
 import React from 'react';
 import styled from 'styled-components';
 import img1 from '../assets/Images/img1.jpg';
-// import img2 from '../assets/Images/img2.jpg';
 
 const Section = styled.section`
   position: relative;
@@ -10,7 +9,7 @@ const Section = styled.section`
   display: flex;
   margin: 0 auto;
   background: linear-gradient(180deg, #ffffff 0%, #000000 100%)
-  display: flex; /* Flexbox for layout */
+  display: flex; 
   gap: 2rem;
   
   @media (max-width: 48em) {
@@ -29,41 +28,54 @@ const Title = styled.h1`
   top: 0.1rem;
   left: 4%;
   z-index: 4;
+  text-align: center;
 
-  ${'' /* @media (max-width: 64rem) {
-    font-size: ${(props) => `calc(${props.theme.fontBig}-5vw)`};
-    top: 0.5rem;
-    left:0;
+  @media (max-width: 64rem) {
+    font-size: 12rem;
+    top: 2.5rem;
+    left: 5.5rem;
   }
-  
+
   @media (max-width: 48em) {
-    font-size: ${(props) => props.theme.fontxxxl};
-  } */}
-  @media (max-width: 1200px) {
-    font-size: 4rem;
+    font-size: 5rem
+    top: 2.5rem;
+    left: 5.5rem;
+  }
+
+  @media (max-width: 1000px) {
+    font-size: 8rem;
+    top: 3rem;
+    left: 14rem;
   }
 
   @media (max-width: 992px) {
-    font-size: 3.5rem;
+    font-size: 7rem;
+    top: 2.5rem;
+    left: 9rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 3rem;
+    font-size: 6.5rem;
+    top: 2.5rem;
+    left:5rem;
   }
 
   @media (max-width: 576px) {
-    font-size: 2.5rem;
+    font-size: 5.5rem;
+    top: 2.5rem;
+    left: 3rem;
   }
 
   @media (max-width: 400px) {
-    font-size: 2rem;
+    font-size: 5rem;
+    top: 3.5rem;
+    left: 3.5rem;
   }
 `;
 
 const Left = styled.div`
   width: 70%;
   font-size: ${(props) => props.theme.fontlg};
-  ${'' /* color: ${(props) => props.theme.text}; */}
   font-weight: 300;
   position: relative;
   position: sticky;
@@ -108,18 +120,9 @@ const Right = styled.div`
   .main-img {
     height: 100vh;
     object-fit: cover;
-    
-    ${'' /* position: relative; // Ensure relative positioning */}
-    ${'' /* top: 3%;  */}
   }
 
-  ${'' /* .small-img-1 {
-    width: 80%;
-    position: absolute;
-    right: 60%;
-    bottom: 9%;
-  } */}
-
+  
   @media (max-width: 64rem) {
     width: 100%;
     display:flex;
@@ -140,7 +143,7 @@ const Right = styled.div`
 const About = () => {
     return (
         <Section id="fixed-target" className='about'>
-            <Title data-scroll data-scroll-speed="-2" data-scroll-direction="horizontal">
+            <Title >
                 About Us
             </Title>
             <Left data-scroll data-scroll-target="#fixed-target">
@@ -160,18 +163,8 @@ const About = () => {
             </Left>
             <Right>
                 <img src={img1} className="main-img" alt="About Us" />
-                {/* <img
-                    data-scroll
-                    data-scroll-speed="4"
-                    src={img2}
-                    className="small-img-1"
-                    alt="About Us"
-                /> */}
             </Right>
-            
         </Section>
-        
-        
     );
 };
 

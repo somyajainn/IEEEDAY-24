@@ -180,7 +180,7 @@ const CoverVideo = () => {
           </motion.h1>
         </div>
         <Button
-          href="https://example.com/register" 
+          href="https://bit.ly/ieeeday2024" 
           target="_blank" 
           rel="noopener noreferrer"
           variants={item}

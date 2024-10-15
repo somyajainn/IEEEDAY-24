@@ -2,22 +2,13 @@ import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { EffectCoverflow, Pagination, Navigation } from 'swiper/modules';
-
 import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
+import slide_image_1 from '../assets/Images/r2.png';
+import slide_image_2 from '../assets/Images/RegistrationOpen.png';
 
-// Import your images
-import slide_image_1 from '../assets/Images/event.png';
-import slide_image_2 from '../assets/Images/event2.png';
-import slide_image_3 from '../assets/Images/event3.png';
-import slide_image_4 from '../assets/Images/event4.png';
-import slide_image_5 from '../assets/Images/event5.png';
-import slide_image_6 from '../assets/Images/event6.png';
-import slide_image_7 from '../assets/Images/event7.png';
-
-// Styled components for the event gallery and swiper
 const Container = styled.div`
   max-width: 110rem;
   padding: 4rem 1rem;
@@ -29,10 +20,10 @@ const Container = styled.div`
 `;
 
 const Heading = styled.h1`
-  padding: 0.5rem 0; /* Adjust this value to move it upward */
+  padding: 0.5rem 0;
   font-size: 4rem;
   text-align: center;
-  margin-top: -3rem; /* Move the heading slightly upward */
+  margin-top: -3rem;
   font-family: 'Kaushan Script';
   font-weight: 300;
   color: #ffffff;
@@ -43,21 +34,21 @@ const Heading = styled.h1`
   ${'' /* transform: translateX(-50%);  */}
 
   @media (max-width: 768px) {
-    font-size: 4rem; /* Slightly smaller for tablets */
+    font-size: 4rem; 
   }
 
   @media (max-width: 500px) {
-    font-size: 3rem; /* Smaller font for mobile */
+    font-size: 3rem; 
   }
 `;
 
 const SwiperContainer = styled.div`
-  height: 40rem; /* Adjust the overall height */
+  height: 40rem; 
   padding: 2rem 0;
   position: relative;
 
   @media (max-width: 500px) {
-    height: 30rem; /* Adjust for smaller screens */
+    height: 30rem; 
   }
 `;
 
@@ -67,12 +58,12 @@ const SwiperSlideStyled = styled(SwiperSlide)`
   position: relative;
 
   @media (max-width: 768px) {
-    width: 20rem; /* Slightly smaller for tablets */
+    width: 20rem; 
     height: 25rem;
   }
 
   @media (max-width: 500px) {
-    width: 90%; /* Full width for mobile */
+    width: 90%; 
     height: 20rem;
   }
 
@@ -81,11 +72,11 @@ const SwiperSlideStyled = styled(SwiperSlide)`
     height: 100%;
     border-radius: 1rem;
     object-fit: contain;
-    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out; /* Smooth transition for hover effect */
+    transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
 
     &:hover {
-      transform: scale(1.05); /* Zoom in on hover */
-      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); /* Add shadow on hover */
+      transform: scale(1.05);
+      box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5); 
     }
   }
 `;
@@ -98,7 +89,7 @@ const SliderControler = styled.div`
   justify-content: center;
 
   @media (max-width: 500px) {
-    bottom: 1rem; /* Adjust positioning for smaller screens */
+    bottom: 1rem; 
   }
 `;
 
@@ -157,28 +148,14 @@ const Event = () => {
         modules={[EffectCoverflow, Pagination, Navigation]}
       >
         <SwiperSlideStyled>
-          {/* Link for the first image */}
-          <a href="https://www.instagram.com/p/CyUtIjxPfed/" target="_blank" rel="noopener noreferrer">
+          <a href="https://www.instagram.com/p/DBISjGpIWQw/" target="_blank" rel="noopener noreferrer">
             <img src={slide_image_1} alt="Event 1" />
           </a>
         </SwiperSlideStyled>
         <SwiperSlideStyled>
-          <img src={slide_image_2} alt="Event 2" />
-        </SwiperSlideStyled>
-        <SwiperSlideStyled>
-          <img src={slide_image_3} alt="Event 3" />
-        </SwiperSlideStyled>
-        <SwiperSlideStyled>
-          <img src={slide_image_4} alt="Event 4" />
-        </SwiperSlideStyled>
-        <SwiperSlideStyled>
-          <img src={slide_image_5} alt="Event 5" />
-        </SwiperSlideStyled>
-        <SwiperSlideStyled>
-          <img src={slide_image_6} alt="Event 6" />
-        </SwiperSlideStyled>
-        <SwiperSlideStyled>
-          <img src={slide_image_7} alt="Event 7" />
+          <a href="https://www.instagram.com/p/DBFt3Z2zeaR/" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_2} alt="Event 2" />
+          </a>
         </SwiperSlideStyled>
 
         <SliderControler>
