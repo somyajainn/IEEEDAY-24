@@ -75,7 +75,7 @@ const CardContainer = styled.div`
   position: relative;
   z-index: 0;
 
-  @media (max-width: 768px) {
+  @media (max-width: 1000px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
