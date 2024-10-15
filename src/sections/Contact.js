@@ -112,6 +112,12 @@ const CardContainer = styled.div`
     grid-gap: 10px;
   }
 
+    @media (max-width: 300px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
   &::-webkit-scrollbar {
     height: 8px;
   }
