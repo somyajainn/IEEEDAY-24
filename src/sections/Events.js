@@ -1,4 +1,4 @@
-/* eslint-disable */
+
 import React from 'react';
 import styled from 'styled-components';
 import { Swiper, SwiperSlide } from 'swiper/react';
@@ -43,15 +43,15 @@ const Heading = styled.h1`
   }
 `;
 
-const SwiperContainer = styled.div`
-  height: 40rem; 
-  padding: 2rem 0;
-  position: relative;
+// const SwiperContainer = styled.div`
+//   height: 40rem; 
+//   padding: 2rem 0;
+//   position: relative;
 
-  @media (max-width: 500px) {
-    height: 30rem; 
-  }
-`;
+//   @media (max-width: 500px) {
+//     height: 30rem; 
+//   }
+// `;
 
 const SwiperSlideStyled = styled(SwiperSlide)`
   width: 25rem;
