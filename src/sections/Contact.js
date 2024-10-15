@@ -226,16 +226,6 @@ const members = [
       gmail: 'mailto:jainsomya482@gmail.com',
     },
   },
-  {
-    name: 'Archita Kadambiya',
-    position: 'Treasurer',
-    image: archita,
-    phone: '+91 ',
-    social: {
-      linkedin: 'https://www.linkedin.com/in/archita-kadambiya-134a36222/',
-      gmail: 'mailto:akadambiya@gmail.com',
-    },
-  },
 ];
 
 const About = () => {
