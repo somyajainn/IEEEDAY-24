@@ -75,7 +75,26 @@ const CardContainer = styled.div`
   position: relative;
   z-index: 0;
 
-  @media (max-width: 1000px) {
+
+@media (max-width: 1000px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 780px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+  
+  @media (max-width: 480px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 411px) {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-gap: 10px;
