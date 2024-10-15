@@ -34,19 +34,19 @@ const Title = styled.h1`
   }
 
   @media (max-width: 992px) {
-    font-size: 3.5rem;
+    font-size: 5rem;
   }
 
   @media (max-width: 768px) {
-    font-size: 3rem;
+    font-size: 5rem;
   }
 
   @media (max-width: 576px) {
-    font-size: 2.5rem;
+    font-size: 5rem;
   }
 
   @media (max-width: 400px) {
-    font-size: 2rem;
+    font-size: 3.5rem;
   }
 `;
 
@@ -76,9 +76,21 @@ const CardContainer = styled.div`
   z-index: 0;
 
   @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-    overflow-x: hidden;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 500px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
+  }
+
+  @media (max-width: 400px) {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 10px;
   }
 
   &::-webkit-scrollbar {
@@ -95,12 +107,12 @@ const CardContainer = styled.div`
   }
 `;
 
-const Card = styled(motion.div)`  // Styled as motion.div for framer-motion
+const Card = styled(motion.div)`
   background: #ffffff;
   border-radius: 15px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2);
   width: 240px;
-  height: 400px; // Increased height for phone number
+  height: 400px;
   padding: 20px;
   display: flex;
   flex-direction: column;
@@ -108,11 +120,33 @@ const Card = styled(motion.div)`  // Styled as motion.div for framer-motion
   position: relative;
   z-index: 0;
 
+  @media (max-width: 1200px) {
+    width: 220px;
+    height: 380px;
+  }
+
+  @media (max-width: 992px) {
+    width: 200px;
+    height: 360px;
+  }
+
   @media (max-width: 768px) {
-    width: 60%;
+    width: 100%;
+    max-width: 300px; // Limiting the width for larger phone screens
+    height: auto;
+  }
+
+  @media (max-width: 576px) {
+    width: 80%;
+    height: auto;
+  }
+
+  @media (max-width: 400px) {
+    width: 80%;
     height: auto;
   }
 `;
+
 
 const Image = styled.img`
   width: 200px;
