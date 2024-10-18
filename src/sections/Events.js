@@ -7,8 +7,16 @@ import 'swiper/css';
 import 'swiper/css/effect-coverflow';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import slide_image_1 from '../assets/Images/r2.png';
+import slide_image_1 from '../assets/Images/registration.png';
 import slide_image_2 from '../assets/Images/RegistrationOpen.png';
+import slide_image_3 from '../assets/Images/Standup.png';
+import slide_image_4 from '../assets/Images/SnakeandLadder.png';
+import slide_image_5 from '../assets/Images/EscapeRoom.png';
+import slide_image_6 from '../assets/Images/TechSpeaker.png';
+import slide_image_7 from '../assets/Images/bitspilani.jpeg';
+import slide_image_8 from '../assets/Images/Awards.jpeg';
+import slide_image_9 from '../assets/Images/CulturalEvening.jpeg';
+import slide_image_10 from '../assets/Images/Inaugural.jpeg';
 
 const Container = styled.div`
   max-width: 110rem;
@@ -148,6 +156,7 @@ const Event = () => {
         }}
         modules={[EffectCoverflow, Pagination, Navigation]}
       >
+      
         <SwiperSlideStyled>
           <a href="https://www.instagram.com/p/DBISjGpIWQw/" target="_blank" rel="noopener noreferrer">
             <img src={slide_image_1} alt="Event 1" />
@@ -156,6 +165,48 @@ const Event = () => {
         <SwiperSlideStyled>
           <a href="https://www.instagram.com/p/DBFt3Z2zeaR/" target="_blank" rel="noopener noreferrer">
             <img src={slide_image_2} alt="Event 2" />
+          </a>
+        </SwiperSlideStyled>
+        
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBOZYlezgHu/" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_3} alt="Event 3" />
+          </a>
+        </SwiperSlideStyled>
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBQOZmdTa1A/?img_index=1" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_4} alt="Event 4" />
+          </a>
+        </SwiperSlideStyled>
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBQTRp-I5Wz/?img_index=1" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_5} alt="Event 5" />
+          </a>
+        </SwiperSlideStyled>
+        
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBPF8ImTPdS/" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_7} alt="Event 6" />
+          </a>
+        </SwiperSlideStyled>
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBOZYlezgHu/" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_8} alt="Event 7" />
+          </a>
+        </SwiperSlideStyled>
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBOZYlezgHu/" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_9} alt="Event 8" />
+          </a>
+        </SwiperSlideStyled>
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBOZYlezgHu/" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_10} alt="Event 9" />
+          </a>
+        </SwiperSlideStyled>
+        <SwiperSlideStyled>
+          <a href="https://www.instagram.com/p/DBO5amCzZxI/" target="_blank" rel="noopener noreferrer">
+            <img src={slide_image_6} alt="Event 10" />
           </a>
         </SwiperSlideStyled>
 
